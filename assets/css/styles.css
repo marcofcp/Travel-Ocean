@@ -1,0 +1,183 @@
+/* ============= GOOGLE FONTS IMPORT ============== */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+
+:root {
+    /* ========= LIGHT MODE COLORS ========== */
+    --button-background: #14505B;
+    --button-background-hover: #0F373F;
+    --sub-title-color: #104146;
+    --description-text: #859F9E;
+    --top-page-button:#2C626E;
+
+    /* ========= DARK MODE COLORS ========== */
+
+}
+
+body {
+    border: none;
+    font-family: "Open Sans", sans-serif;
+}
+/* =========== MAIN SECTION + HEADER + NAV ============= */
+.header-main-container {
+    height: 100vh;
+    background-image: url('../img/home1.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+nav {
+    padding-top: 1.5em;
+}
+.logo-box {
+    color: white;
+    font-weight: 600;
+}
+.ul-box ul {
+    display: flex;
+    gap: 4em;
+}
+.ul-box ul li {
+    list-style-type: none;
+}
+.ul-box ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+.moon-box {
+    margin-left: -3em;
+}
+.moon {
+    width: 1em;
+}
+.active {
+    border-bottom: 3px solid white;
+    padding-bottom: 0.5em;
+}
+.hidden-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/* ======= MAIN LEFT SIDE ======== */
+
+.left-content-description {
+    width: 30em;
+    padding-top: 3em;
+}
+.left-content-description h1 {
+    font-size: 4em;
+    text-shadow: 0 0 3px black;
+}
+.beaches span {
+    font-weight: bolder;
+}
+.button-box {
+    margin-top: 2em;
+}
+.button-box button {
+    text-decoration: none;
+    background-color: var(--button-background);
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0.8em 2em;
+    border: none;
+    transition:  0.3s;
+}
+.button-box button:hover {
+    background-color: var(--button-background-hover);
+}
+.socials-box {
+    width: 10em;
+    margin-top: 3em;
+}
+.socials-box img {
+    width: 1.2em;
+}
+.socials-box a:hover {
+    transform: translateY(-0.5em);
+    transition: 0.3s;
+}
+
+/* ======= MAIN RIGHT SIDE ======== */
+
+.places_to_visit {
+    position: absolute;
+    right: 20%;
+    bottom: 10%;
+    width: 22em;
+    background-color: var(--button-background);
+    padding: 1em;
+}
+.places_description {
+    width: 10em;
+}
+.more-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1em;
+}
+.more-button img {
+    width: 1em;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+}
+.place-image {
+    width: 10em;
+}
+
+
+
+
+
+
+/* ============= MEDIA QUERIES ============== */
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0;
+    }
+}
+@media (max-width: 990px) {
+    .places_to_visit {
+        transform: scale(0.7);
+        right: 2%;
+        bottom: 2%;
+    }
+}
+@media (max-width: 768px) {
+    .ul-box {
+        display: none;
+    }
+    .hidden-menu {
+        display: block;
+    }
+}
+@media (max-width: 580px) {
+    .left-content-description {
+        padding-top: 1.5em;
+        width: 25em;
+    }
+    .left-content-description h1 {
+        font-size: 3em;
+    }
+    .socials-box {
+        margin-top: 2.5em;
+    }
+    .places_to_visit {
+        right: -7%;
+        bottom: 0;
+    }
+}
+@media (max-width: 412px) {
+    .left-content-description {
+        width: 20em;
+    }
+    .socials-box {
+        margin-top: 1.5em;
+    }
+}
