@@ -17,6 +17,7 @@
 body {
     border: none;
     font-family: "Open Sans", sans-serif;
+    overflow: hidden;
 }
 /* =========== MAIN SECTION + HEADER + NAV ============= */
 .header-main-container {
@@ -25,6 +26,13 @@ body {
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
 }
 nav {
     padding-top: 1.5em;
@@ -52,13 +60,53 @@ nav {
 .moon {
     width: 1em;
 }
+.hidden-menu-fours {
+    display: none;
+    cursor: pointer;
+}
+main {
+    padding-top: 83px;
+}
+
+/* ============ ACTIVE STATES TOGGLE =============== */
+
 .active {
     border-bottom: 3px solid white;
     padding-bottom: 0.5em;
 }
+.active-hidden-menu {
+    right: 0 !important;
+}
+.close-hidden-menu {
+    right: -80%;
+}
+.border-hidden {
+    border-bottom: 3px solid var(--sub-title-color);
+}
+
+/* =========== HIDDEN MENU =========== */
+
 .hidden-menu {
+    position: fixed;
+    background-color: white;
+    width: 70%;
+    height: 100vh;
+    right: -70%;
+    top: 0;
+    z-index: 999;
     display: none;
+    transition: 0.3s;
+}
+.close-box img {
+    width: 1em;
+    margin: 1em;
     cursor: pointer;
+}
+.hidden-menu ul a {
+    text-decoration: none;
+    color: var(--sub-title-color);
+    font-weight: bold;
+    padding-bottom: 0.5em;
 }
 
 /* ======= MAIN LEFT SIDE ======== */
@@ -95,7 +143,7 @@ nav {
     margin-top: 3em;
 }
 .socials-box img {
-    width: 1.2em;
+    width: 1.5em;
 }
 .socials-box a:hover {
     transform: translateY(-0.5em);
@@ -135,16 +183,21 @@ nav {
 
 
 
+
+
 /* ============= MEDIA QUERIES ============== */
 
 @media (max-width: 1200px) {
     .container {
         padding: 0;
     }
+    .left-content-description {
+        padding-top: 83px;
+    }
 }
 @media (max-width: 990px) {
     .places_to_visit {
-        transform: scale(0.7);
+        transform: scale(0.9);
         right: 2%;
         bottom: 2%;
     }
@@ -156,10 +209,12 @@ nav {
     .hidden-menu {
         display: block;
     }
+    .hidden-menu-fours {
+        display: block;
+    }
 }
 @media (max-width: 580px) {
     .left-content-description {
-        padding-top: 1.5em;
         width: 25em;
     }
     .left-content-description h1 {
@@ -167,10 +222,26 @@ nav {
     }
     .socials-box {
         margin-top: 2.5em;
+        flex-direction: column;
+        gap: 2em;
     }
+    .socials-box a:hover {
+        transform: none;
+    }
+}
+@media (max-width: 574px) {
+    .logo-box {
+        margin-left: 1em;
+    }
+    .hidden-menu-fours {
+        margin-right: 1em;
+    }
+}
+@media (max-width: 450px) {
     .places_to_visit {
-        right: -7%;
-        bottom: 0;
+        transform: scale(0.7);
+        right: 1%;
+        bottom: 1%;
     }
 }
 @media (max-width: 412px) {
