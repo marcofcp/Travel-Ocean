@@ -26,6 +26,14 @@ for (var i = 0; i < btns.length; i++) {
 
 const btns_hidden = document.getElementsByClassName("nav_hidden");
 
+for (var i = 0; i < btns_hidden.length; i++) {
+    btns_hidden[i].addEventListener("click", function() {
+    var currentLink = document.getElementsByClassName("border-hidden");
+    currentLink[0].className = currentLink[0].className.replace(" border-hidden", "");
+    this.className += " border-hidden";
+    })
+};
+
 /* ============= SCroll Reveal Animation =============== */
 
 const sr = ScrollReveal({
@@ -33,7 +41,7 @@ const sr = ScrollReveal({
     duration: 2800,
 });
 
-sr.reveal(`.left-content-description, .socials-box`, {
+sr.reveal(`.left-content-description, .socials-box, .places_to_visit`, {
     origin: "top",
     interval: 100,
 });
