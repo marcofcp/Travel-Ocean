@@ -1,38 +1,20 @@
-/* ============ OPEN HIDDEN MENU ============= */
-
+const headerBox = document.getElementById("header-box");
+const header = document.getElementById("header");
+const logo = document.getElementById("logo");
+const navLinks = [...document.querySelectorAll(".nav_a")];
+const darkOn = document.getElementById("ri-moon-line");
 const hiddenMenuFours = document.getElementById("hidden-menu-fours");
 const hiddenMenu = document.getElementById("hidden-menu");
 const closeMenuImg = document.getElementById("close-menu-img");
 
-hiddenMenuFours.addEventListener("click", ()=> {
+/* ============ OPEN HIDDEN MENU ============= */
+
+hiddenMenuFours.addEventListener("click", (evt)=> {
     hiddenMenu.classList.add("active-hidden-menu");
 });
 closeMenuImg.addEventListener("click", (evt)=> {
     hiddenMenu.classList.remove("active-hidden-menu");
 });
-
-/* ========== Bottom Border Change on Nav Links ============= */
-
-const btns = document.getElementsByClassName("nav_a");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-    })
-};
-
-/* ========== Bottom Border Change on HIDDEN Nav Links ============= */
-
-const btns_hidden = document.getElementsByClassName("nav_hidden");
-
-for (var i = 0; i < btns_hidden.length; i++) {
-    btns_hidden[i].addEventListener("click", function() {
-    var currentLink = document.getElementsByClassName("border-hidden");
-    currentLink[0].className = currentLink[0].className.replace(" border-hidden", "");
-    this.className += " border-hidden";
-    })
-};
 
 /* ============= SCroll Reveal Animation =============== */
 
@@ -44,4 +26,24 @@ const sr = ScrollReveal({
 sr.reveal(`.left-content-description, .socials-box, .places_to_visit`, {
     origin: "top",
     interval: 100,
+});
+
+/* ======== SCROLLY CHANGE NAV BACKGROUND-COLOR ======== */
+
+window.addEventListener("scroll", (evt)=> {
+    if (window.scrollY > 0) {
+        header.classList.add("header-scrolled");
+        logo.classList.add("scrolled-logo");
+        darkOn.classList.add("scrolled-ri-moon-line");
+        navLinks.map((c)=> {
+            c.classList.add("scrolled-nav_a");
+        });
+    } else {
+        header.classList.remove("header-scrolled");
+        logo.classList.remove("scrolled-logo");
+        darkOn.classList.remove("scrolled-ri-moon-line");
+        navLinks.map((c)=> {
+            c.classList.remove("scrolled-nav_a");
+        });
+    }
 });
