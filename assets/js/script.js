@@ -4,6 +4,7 @@ const logo = document.getElementById("logo");
 const navLinks = [...document.querySelectorAll(".nav_a")];
 const darkOn = document.getElementById("ri-moon-line");
 const hiddenMenuFours = document.getElementById("hidden-menu-fours");
+const riMenuLine = document.getElementById("ri-menu-line")
 const hiddenMenu = document.getElementById("hidden-menu");
 const closeMenuImg = document.getElementById("close-menu-img");
 
@@ -35,6 +36,7 @@ window.addEventListener("scroll", (evt)=> {
         header.classList.add("header-scrolled");
         logo.classList.add("scrolled-logo");
         darkOn.classList.add("scrolled-ri-moon-line");
+        riMenuLine.style.color = "#0F373F";
         navLinks.map((c)=> {
             c.classList.add("scrolled-nav_a");
         });
@@ -42,8 +44,19 @@ window.addEventListener("scroll", (evt)=> {
         header.classList.remove("header-scrolled");
         logo.classList.remove("scrolled-logo");
         darkOn.classList.remove("scrolled-ri-moon-line");
+        riMenuLine.style.color = "white";
         navLinks.map((c)=> {
             c.classList.remove("scrolled-nav_a");
         });
     }
 });
+
+// window.addEventListener("scroll", (evt)=> {
+//     if((window.scrollY > 0) && (screen.width < 768)) {
+//         hiddenMenuFours.style.display = "none";
+//         scrolledMenuFours.style.display = "block";
+//     } else {
+//         hiddenMenuFours.style.display = "block";
+//         scrolledMenuFours.style.display = "none";
+//     }
+// })
