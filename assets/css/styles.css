@@ -68,11 +68,11 @@ nav {
 .ri-moon-line {
     color: white;
 }
-.hidden-menu-fours {
+.hidden-menu-hamburger {
     display: none;
     cursor: pointer;
 }
-.hidden-menu-fours i {
+.hidden-menu-hamburger i {
     font-size: 2.5em;
     color: white;
 }
@@ -118,9 +118,10 @@ main {
     display: none;
     transition: 0.3s;
 }
-.close-box img {
-    width: 1em;
-    margin: 1em;
+.close-box i {
+    font-size: 3em;
+    color: #0F373F;
+    margin: 0.2em 0.4em;
     cursor: pointer;
 }
 .hidden-menu ul a {
@@ -231,7 +232,7 @@ main {
     .hidden-menu {
         display: block;
     }
-    .hidden-menu-fours {
+    .hidden-menu-hamburger {
         display: block;
     }
 }

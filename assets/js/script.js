@@ -3,17 +3,18 @@ const header = document.getElementById("header");
 const logo = document.getElementById("logo");
 const navLinks = [...document.querySelectorAll(".nav_a")];
 const darkOn = document.getElementById("ri-moon-line");
-const hiddenMenuFours = document.getElementById("hidden-menu-fours");
+const hiddenMenuHamburger = document.getElementById("hidden-menu-hamburger");
+const closeHiddenMenu = document.getElementById("ri-close-line");
 const riMenuLine = document.getElementById("ri-menu-line")
 const hiddenMenu = document.getElementById("hidden-menu");
 const closeMenuImg = document.getElementById("close-menu-img");
 
 /* ============ OPEN HIDDEN MENU ============= */
 
-hiddenMenuFours.addEventListener("click", (evt)=> {
+hiddenMenuHamburger.addEventListener("click", (evt)=> {
     hiddenMenu.classList.add("active-hidden-menu");
 });
-closeMenuImg.addEventListener("click", (evt)=> {
+closeHiddenMenu.addEventListener("click", (evt)=> {
     hiddenMenu.classList.remove("active-hidden-menu");
 });
 
