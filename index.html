@@ -17,20 +17,29 @@
 </head>
 <body>
 
-    <!-- =========== HIDDEN MENU ============= -->
+    <!-- GO TO TOP BUTTON -->
 
+    <div class="go-to-top-button" id="go-to-top-button">
+        <i class="ri-arrow-up-line"></i>
+    </div>
+
+
+    <!-- =========== HIDDEN MENU ============= -->
     <div class="hidden-menu" id="hidden-menu">
         <div class="close-box d-flex justify-content-end">
             <i class="ri-close-line" id="ri-close-line"></i>
         </div>
         <ul class="d-flex flex-column gap-5">
                 <li class="text-uppercase list-unstyled"><a href="#" class="nav_hidden">HOME</a></li>
-                <li class="text-uppercase list-unstyled"><a href="#" class="nav_hidden">ABOUT</a></li>
+                <li class="text-uppercase list-unstyled"><a href="#about" class="nav_hidden">ABOUT</a></li>
                 <li class="text-uppercase list-unstyled"><a href="#" class="nav_hidden">DISCOVER</a></li>
                 <li class="text-uppercase list-unstyled"><a href="#" class="nav_hidden">PLACES</a></li>
         </ul>
+        <div class="dark-mode-box">
+            <p class="dark-mode-text m-0">Dark Mode</p>
+            <i class="ri-moon-line" id="ri-moon-line-hidden-menu"></i>
+        </div>
     </div>
-
     <!-- ======== MAIN SECTION + HEADER + NAV =========== -->
     <section class="container-fluid header-main-container" id="header-main-container">
         <header class="container-fluid" id="header">
@@ -54,7 +63,6 @@
                 </div>
             </nav>
         </header>
-
         <!-- ------------ TITLES AND LEFT SIDE OF MAIN --------- -->
         <main class="container">
             <div class="main-content text-white">
@@ -72,7 +80,6 @@
                 </div>
             </div>
         </main>
-
         <!-- ------------ PLACES TO VISIT BOX ------------------- -->
         <div class="places_to_visit d-flex gap-3 mx-auto">
             <div class="places_description d-flex flex-column justify-content-center">
@@ -85,9 +92,31 @@
         </div>
     </section>
 
-    <div id="about">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit explicabo delectus veniam distinctio nulla architecto, repellat eveniet excepturi fuga placeat numquam voluptas repellendus reprehenderit alias dolorum corrupti sint nihil similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem expedita, quas quae eligendi dicta in iste qui facilis fuga non consectetur necessitatibus sunt tenetur quidem blanditiis excepturi dolorem repellat reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit explicabo delectus veniam distinctio nulla architecto, repellat eveniet excepturi fuga placeat numquam voluptas repellendus reprehenderit alias dolorum corrupti sint nihil similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem expedita, quas quae eligendi dicta in iste qui facilis fuga non consectetur necessitatibus sunt tenetur quidem blanditiis excepturi dolorem repellat reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit explicabo delectus veniam distinctio nulla architecto, repellat eveniet excepturi fuga placeat numquam voluptas repellendus reprehenderit alias dolorum corrupti sint nihil similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem expedita, quas quae eligendi dicta in iste qui facilis fuga non consectetur necessitatibus sunt tenetur quidem blanditiis excepturi dolorem repellat reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit explicabo delectus veniam distinctio nulla architecto, repellat eveniet excepturi fuga placeat numquam voluptas repellendus reprehenderit alias dolorum corrupti sint nihil similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem expedita, quas quae eligendi dicta in iste qui facilis fuga non consectetur necessitatibus sunt tenetur quidem blanditiis excepturi dolorem repellat reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit explicabo delectus veniam distinctio nulla architecto, repellat eveniet excepturi fuga placeat numquam voluptas repellendus reprehenderit alias dolorum corrupti sint nihil similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem expedita, quas quae eligendi dicta in iste qui facilis fuga non consectetur necessitatibus sunt tenetur quidem blanditiis excepturi dolorem repellat reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit explicabo delectus veniam distinctio nulla architecto, repellat eveniet excepturi fuga placeat numquam voluptas repellendus reprehenderit alias dolorum corrupti sint nihil similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem expedita, quas quae eligendi dicta in iste qui facilis fuga non consectetur necessitatibus sunt tenetur quidem blanditiis excepturi dolorem repellat reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam possimus incidunt, deserunt iure distinctio temporibus totam quis modi voluptatem voluptas accusantium corrupti dicta adipisci, quae fuga quam. Non, nihil quia. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    </div>
+    <!-- SECTION ABOUT -->
+
+    <section class="about container-fluid" id="about">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-md-end justify-content-center text-md-start text-center">
+                <div class="about-left-side d-flex flex-column gap-4">
+                    <h2 class="text-capitalize m-0">More Information <br> About The Best Beaches</h2>
+                    <p class="m-0">You can find the most beautiful and pleasant places at the best prices with special discounts, you choose the place we will guide you all the way to wait, get your place now.</p>
+                    <div class="about-button-box">
+                        <a href="#">Reserve a place</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pt-md-0 mt-md-0 pt-5 mt-4 d-flex justify-content-md-start justify-content-center">
+                <div class="pictures-box d-flex gap-3 align-self-center">
+                    <div class="picture1-box align-self-center">
+                        <img src="./assets/img/about1.jpg" alt="About Picture 2" class="img-fluid">
+                    </div>
+                    <div class="picture2-box align-self-center">
+                        <img src="./assets/img/about2.jpg" alt="About Picture 2" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

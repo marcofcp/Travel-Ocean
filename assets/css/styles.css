@@ -17,6 +17,7 @@
 body {
     border: none;
     font-family: "Open Sans", sans-serif;
+    background-color: white;
 }
 /* =========== MAIN SECTION + HEADER + NAV ============= */
 .header-main-container {
@@ -104,6 +105,9 @@ main {
 .scrolled-ri-moon-line {
     color: var(--button-background-hover);
 }
+.scrolled-go-to-top {
+    bottom: 15% !important;
+}
 
 /* =========== HIDDEN MENU =========== */
 
@@ -126,9 +130,46 @@ main {
 }
 .hidden-menu ul a {
     text-decoration: none;
-    color: var(--sub-title-color);
+    color: gray;
     font-weight: bold;
     padding-bottom: 0.5em;
+}
+.hidden-menu ul a:hover {
+    color: var(--button-background-hover);
+}
+.dark-mode-box {
+    color: var(--button-background-hover);
+    display: flex;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+.dark-mode-box p {
+    font-size: 0.8em;
+    align-self: center;
+}
+.dark-mode-box i {
+    color: var(--button-background-hover);
+    margin-left: 2em;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+/* =========== GO TO TOP BUTTON ============ */
+
+.go-to-top-button {
+    position: fixed;
+    bottom: -15%;
+    right: 3%;
+    background-color: var(--button-background);
+    padding: 0.5em 0.7em;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+.go-to-top-button i {
+    color: white;
+    font-size: 1.3em;
 }
 
 /* ======= MAIN LEFT SIDE ======== */
@@ -199,6 +240,49 @@ main {
 }
 .place-image {
     width: 10em;
+    overflow: hidden;
+}
+.place-image img:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+
+/* ========== SECTION ABOUT =========== */
+
+.about {
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+        /* Left Side */
+
+.about-left-side {
+    width: 30em;
+}
+.about-left-side h2 {
+    color: var(--sub-title-color);
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.about-left-side p {
+    color: var(--top-page-button);
+}
+.about-button-box {
+    margin-top: 2em;
+}
+.about-button-box a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--button-background);
+    padding: 1em 2em;
+}
+
+    /* Right Side */
+
+.picture1-box {
+    max-width: 13em;
+}
+.picture2-box {
+    max-width: 18em;
 }
 
 
@@ -234,6 +318,10 @@ main {
     }
     .hidden-menu-hamburger {
         display: block;
+    }
+    .about {
+        padding-top: 4em;
+        padding-bottom: 4em;
     }
 }
 @media (max-width: 580px) {

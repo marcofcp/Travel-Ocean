@@ -50,6 +50,16 @@ window.addEventListener("scroll", (evt)=> {
             c.classList.remove("scrolled-nav_a");
         });
     }
+
+    /* ======== GO TO TOP BUTTON REVEALL ========= */
+
+    const goToTopButton = document.getElementById("go-to-top-button");
+
+    if(window.scrollY > 300) {
+        goToTopButton.classList.add("scrolled-go-to-top");
+    } else {
+        goToTopButton.classList.remove("scrolled-go-to-top");
+    }
 });
 
 // window.addEventListener("scroll", (evt)=> {
@@ -61,3 +71,7 @@ window.addEventListener("scroll", (evt)=> {
 //         scrolledMenuFours.style.display = "none";
 //     }
 // })
+
+/* ======== GO TO TOP BUTTON REVEALL ========= */
+
+const goToTopButton = document.getElementById("go-to-top-button");
