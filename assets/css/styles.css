@@ -303,7 +303,6 @@ main {
 
 .discover {
     margin-bottom: 4em;
-    width: 75em;
 }
 .discover h2 {
     color: var(--sub-title-color);
@@ -315,7 +314,7 @@ main {
     width: 237px;
 }
 .swiper-box {
-    max-width: 60%;
+    max-width: 50%;
 }
 .slide-img-box {
     width: 15em;
@@ -346,7 +345,7 @@ main {
 /* ============= MEDIA QUERIES ============== */
 
 @media (max-width: 1200px) {
-    .container {
+    .container-left-side {
         padding: 0;
     }
     .left-content-description {
@@ -358,6 +357,9 @@ main {
         transform: scale(0.9);
         right: 2%;
         bottom: 2%;
+    }
+    .swiper-box {
+        max-width: 80%;
     }
 }
 @media (max-width: 768px) {
@@ -374,6 +376,9 @@ main {
         padding-top: 4em;
         padding-bottom: 4em;
     }
+    .swiper-box {
+        max-width: 95%;
+    }
 }
 @media (max-width: 580px) {
     .left-content-description {
@@ -389,6 +394,9 @@ main {
     }
     .socials-box a:hover {
         transform: none;
+    }
+    .swiper-box {
+        transform: scale(0.9);
     }
 }
 @media (max-width: 574px) {
