@@ -25,8 +25,18 @@ const sr = ScrollReveal({
     duration: 2800,
 });
 
-sr.reveal(`.left-content-description, .socials-box, .places_to_visit`, {
+sr.reveal(`.left-content-description, .socials-box, .places_to_visit, .swiper-box`, {
     origin: "top",
+    interval: 100,
+});
+
+sr.reveal(`.about-left`, {
+    origin: "left",
+    interval: 100,
+});
+
+sr.reveal(`.about-right`, {
+    origin: "right",
     interval: 100,
 });
 
@@ -75,3 +85,19 @@ window.addEventListener("scroll", (evt)=> {
 /* ======== GO TO TOP BUTTON REVEALL ========= */
 
 const goToTopButton = document.getElementById("go-to-top-button");
+
+/* ============== Sweeper Discover ================ */
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    effect: "coverflow",
+    slidesPerView: "auto",
+    spaceBetween: 32,
+    coverflowEffect: {
+        rotate: 0,
+    },
+
+});
