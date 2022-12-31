@@ -170,6 +170,7 @@ main {
     padding: 0.2em 0.5em;
     transition: 0.3s;
     opacity: 0.8;
+    z-index: 99;
 }
 .go-to-top-button i {
     color: white;
@@ -256,6 +257,7 @@ main {
 .about {
     padding-top: 8em;
     padding-bottom: 8em;
+    overflow: hidden;
 }
         /* Left Side */
 
