@@ -318,7 +318,7 @@ main {
 /* ========= SECTION DISCOVER ============ */
 
 .discover {
-    margin-bottom: 4em;
+    margin-bottom: 12em;
 }
 .discover h2 {
     color: var(--sub-title-color);
@@ -370,6 +370,31 @@ main {
 }
 .data-description {
     color: var(--top-page-button);
+}
+.two-photos-experience-container {
+    margin-top: 3em;
+    position: relative;
+    margin-bottom: 4em;
+}
+.img-big-box {
+    width: 27em;
+    margin-left: 0.3em;
+    overflow: hidden;
+}
+.img-big-box img:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+.img-small-box {
+    width: 12em;
+    overflow: hidden;
+    z-index: 9;
+    margin-left: -5em;
+    margin-top: 3em;
+}
+.img-small-box img:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -457,6 +482,9 @@ main {
     }
     .data-container {
         gap: 2em;
+    }
+    .two-photos-experience-container {
+        transform: scale(0.8);
     }
 }
 @media (max-width: 574px) {
