@@ -186,6 +186,9 @@ main {
 
 /* ======= MAIN LEFT SIDE ======== */
 
+.main-content {
+    padding-left: 5em;
+}
 .left-content-description {
     width: 30em;
     padding-top: 3em;
@@ -329,6 +332,7 @@ main {
 }
 .swiper-box {
     max-width: 54%;
+    margin-bottom: 8em;
 }
 .slide-img-box {
     width: 15em;
@@ -353,6 +357,21 @@ main {
     font-weight: bold;
 }
 
+/* --------------- SECTION EXPERIENCE -------------- */
+
+.data-container {
+    gap: 4em;
+}
+.data-number {
+    color: var(--button-background);
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+.data-description {
+    color: var(--top-page-button);
+}
+
 
 
 /*=============== SCROLL BAR ===============*/
@@ -368,6 +387,8 @@ main {
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--text-color-light);
 }
+
+
 
 
 
@@ -404,12 +425,16 @@ main {
     .hidden-menu-hamburger {
         display: block;
     }
+    .main-content {
+        padding-left: 0;
+    }
     .about {
         padding-top: 4em;
         padding-bottom: 4em;
     }
     .swiper-box {
         max-width: 95%;
+        margin-bottom: 4em;
     }
 }
 @media (max-width: 580px) {
@@ -429,6 +454,9 @@ main {
     }
     .swiper-box {
         transform: scale(0.9);
+    }
+    .data-container {
+        gap: 2em;
     }
 }
 @media (max-width: 574px) {
@@ -456,5 +484,11 @@ main {
     }
     .socials-box {
         margin-top: 1.5em;
+    }
+    .data-number {
+        font-size: 1.3em;
+    }
+    .data-description {
+        font-size: 0.8em;
     }
 }
