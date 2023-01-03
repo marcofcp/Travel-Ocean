@@ -318,7 +318,7 @@ main {
 /* ========= SECTION DISCOVER ============ */
 
 .discover {
-    margin-bottom: 12em;
+    margin-bottom: 8em;
 }
 .discover h2 {
     color: var(--sub-title-color);
@@ -361,6 +361,7 @@ main {
 
 .data-container {
     gap: 4em;
+    margin-bottom: 4em;
 }
 .data-number {
     color: var(--button-background);
