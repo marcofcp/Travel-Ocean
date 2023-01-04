@@ -25,17 +25,17 @@ const sr = ScrollReveal({
     duration: 2800,
 });
 
-sr.reveal(`.left-content-description, .socials-box, .places_to_visit, .swiper-box`, {
+sr.reveal(`.left-content-description, .socials-box, .places_to_visit, .swiper-box, .data-box, .two-photos-experience-container`, {
     origin: "top",
     interval: 100,
 });
 
-sr.reveal(`.about-left`, {
+sr.reveal(`.about-left, .description-video`, {
     origin: "left",
     interval: 100,
 });
 
-sr.reveal(`.about-right`, {
+sr.reveal(`.about-right, .video-box`, {
     origin: "right",
     interval: 100,
 });
@@ -72,16 +72,6 @@ window.addEventListener("scroll", (evt)=> {
     }
 });
 
-// window.addEventListener("scroll", (evt)=> {
-//     if((window.scrollY > 0) && (screen.width < 768)) {
-//         hiddenMenuFours.style.display = "none";
-//         scrolledMenuFours.style.display = "block";
-//     } else {
-//         hiddenMenuFours.style.display = "block";
-//         scrolledMenuFours.style.display = "none";
-//     }
-// })
-
 /* ======== GO TO TOP BUTTON REVEALL ========= */
 
 const goToTopButton = document.getElementById("go-to-top-button");
@@ -100,4 +90,26 @@ const swiper = new Swiper('.swiper', {
         rotate: 0,
     },
 
+});
+
+/* =========== SECTION VÍDEO ============ */
+
+const videoFile = document.getElementById("video-file");
+const videoButton = document.getElementById("video-button");
+const videoIcon = document.getElementById("video-icon");
+
+videoButton.addEventListener("click", (evt)=> {
+    if(videoFile.paused) {
+        // Play video
+        videoFile.play();
+        // We change the icon
+        videoIcon.classList.add("ri-pause-line");
+        videoIcon.classList.remove("ri-play-line");
+    } else {
+        // Pause video
+        videoFile.pause();
+        // We change the icon
+        videoIcon.classList.remove("ri-pause-line");
+        videoIcon.classList.add("ri-play-line");
+    }
 });
