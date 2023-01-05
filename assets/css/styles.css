@@ -634,6 +634,16 @@ main {
         padding-right: 0;
     }
 }
+@media (max-width: 470px) {
+    .video-file {
+        transform: scale(0.7);
+    }
+    .video-button {
+        right: 17%;
+        bottom: 7%;
+        padding: 0.3em 1.2em;
+    }
+}
 @media (max-width: 450px) {
     .places_to_visit {
         transform: scale(0.7);
@@ -641,8 +651,8 @@ main {
         bottom: 1%;
     }
     .video-button {
-        right: 10%;
-        bottom: 2%;
+        right: 17%;
+        bottom: 6%;
         padding: 0.3em 1.2em;
     }
 }
@@ -660,8 +670,8 @@ main {
         font-size: 0.8em;
     }
     .video-button {
-        right: 12%;
-        bottom: 2%;
+        right: 17%;
+        bottom: 6%;
         padding: 0.3em 1.2em;
     }
 }
