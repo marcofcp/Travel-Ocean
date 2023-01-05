@@ -25,7 +25,7 @@ const sr = ScrollReveal({
     duration: 2800,
 });
 
-sr.reveal(`.left-content-description, .socials-box, .places_to_visit, .swiper-box, .data-box, .two-photos-experience-container`, {
+sr.reveal(`.left-content-description, .socials-box, .places_to_visit, .swiper-box, .data-box, .two-photos-experience-container, .cards-container`, {
     origin: "top",
     interval: 100,
 });
@@ -35,7 +35,7 @@ sr.reveal(`.about-left, .description-video`, {
     interval: 100,
 });
 
-sr.reveal(`.about-right, .video-box`, {
+sr.reveal(`.about-right, .video-file`, {
     origin: "right",
     interval: 100,
 });
