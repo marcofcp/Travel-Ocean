@@ -422,6 +422,7 @@ main {
 }
 .section-video p {
     color: var(--button-background);
+    padding: 0 1em;
 }
 .video-box {
     max-width: 45em;
@@ -579,6 +580,9 @@ main {
         max-width: 95%;
         margin-bottom: 4em;
     }
+    .discover {
+        margin-bottom: 4em;
+    }
     .video-file {
         max-width: 30em;
     }
@@ -586,6 +590,9 @@ main {
         right: 2.5em;
         bottom: -1.5em;
         padding: 0.3em 1.2em;
+    }
+    .section-places {
+        padding-top: 5em;
     }
 }
 @media (max-width: 580px) {
