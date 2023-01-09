@@ -30,12 +30,12 @@ sr.reveal(`.left-content-description, .socials-box, .places_to_visit, .swiper-bo
     interval: 100,
 });
 
-sr.reveal(`.about-left, .description-video`, {
+sr.reveal(`.about-left, .description-video, .subscribe-description`, {
     origin: "left",
     interval: 100,
 });
 
-sr.reveal(`.about-right, .video-file`, {
+sr.reveal(`.about-right`, {
     origin: "right",
     interval: 100,
 });
