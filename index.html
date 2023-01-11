@@ -17,7 +17,7 @@
     <!-- =========== EXTERNAL STYLESHEET =============== -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body>
+<body id="body">
 
     <!-- GO TO TOP BUTTON -->
 
@@ -38,8 +38,9 @@
                 <li class="text-uppercase list-unstyled"><a href="#places" class="nav_hidden">PLACES</a></li>
         </ul>
         <div class="dark-mode-box">
-            <p class="dark-mode-text m-0">Dark Mode</p>
+            <p class="dark-mode-text m-0 change-gray">Dark Mode</p>
             <i class="ri-moon-line" id="ri-moon-line-hidden-menu"></i>
+            <i class="ri-sun-line change-gray" id="ri-sun-line-hidden-menu"></i>
         </div>
     </div>
     <!-- ======== MAIN SECTION + HEADER + NAV =========== -->
@@ -55,8 +56,9 @@
                         <li><a href="#about" class="nav_a nav_b">About</a></li>
                         <li><a href="#discover" class="nav_a nav_b">Discover</a></li>
                         <li><a href="#places" class="nav_a nav_b">Places</a></li>
-                        <div class="moon-box align-self-center">
+                        <div class="moon-box align-self-center" id="moon-box">
                             <i class="ri-moon-line align-self-center" id="ri-moon-line"></i>
+                            <i class="ri-sun-line align-self-center" id="ri-sun-line"></i>
                         </div>
                     </ul>
                 </div>
@@ -101,7 +103,7 @@
             <div class="col-md-6 col-12 about-left d-flex justify-content-md-end justify-content-center text-md-start text-center">
                 <div class="about-left-side d-flex flex-column gap-4">
                     <h2 class="text-capitalize m-0">More Information <br> About The Best Beaches</h2>
-                    <p class="m-0">You can find the most beautiful and pleasant places at the best prices with special discounts, you choose the place we will guide you all the way to wait, get your place now.</p>
+                    <p class="m-0 change-gray">You can find the most beautiful and pleasant places at the best prices with special discounts, you choose the place we will guide you all the way to wait, get your place now.</p>
                     <div class="about-button-box">
                         <a href="#">Reserve a place</a>
                     </div>
@@ -176,16 +178,16 @@
             <h2 class="text-capitalize text-center">With Our Experience <br> We Will Serve You</h2>
             <div class="data-container d-flex justify-content-center">
                 <div class="data-box d-flex flex-column gap-2">
-                    <p class="m-0 data-number">20</p>
-                    <p class="m-0 data-description">Years of <br> Experience</p>
+                    <p class="m-0 data-number change-gray">20</p>
+                    <p class="m-0 data-description change-gray">Years of <br> Experience</p>
                 </div>
                 <div class="data-box d-flex flex-column gap-2">
-                    <p class="m-0 data-number">75</p>
-                    <p class="m-0 data-description">Complete <br> tours</p>
+                    <p class="m-0 data-number change-gray">75</p>
+                    <p class="m-0 data-description change-gray">Complete <br> tours</p>
                 </div>
                 <div class="data-box d-flex flex-column gap-2">
-                    <p class="m-0 data-number">650+</p>
-                    <p class="m-0 data-description">Tourist <br> Destinations</p>
+                    <p class="m-0 data-number change-gray">650+</p>
+                    <p class="m-0 data-description change-gray">Tourist <br> Destinations</p>
                 </div>
             </div>
             <!-- Two photos section -->
@@ -203,9 +205,9 @@
     <!-- =========== SECTION VÍDEO ============ -->
 
     <section class="container section-video p-0">
-        <div class="title-description-video">
+        <div class="title-description-video change-gray">
             <h2 class="text-capitalize text-center">Video Tour</h2>
-            <p class="m-0 text-center description-video">Find out more with our video of the most beautiful and pleasant places for you and your family.</p>
+            <p class="m-0 text-center description-video change-gray">Find out more with our video of the most beautiful and pleasant places for you and your family.</p>
         </div>
         <div class="video-box d-flex justify-content-center">
             <video class="video-file" id="video-file">
@@ -315,7 +317,7 @@
         </div>
     </section>
 
-    <!-- ============ SECTION PLACES ============= -->
+    <!-- ============ SECTION SUBSCRIBE ============= -->
 
     <section class="container section-subscribe">
         <div class="subscribe-content d-flex flex-column">
@@ -323,10 +325,10 @@
             <p class="m-0 subscribe-description text-center">Subscribe to our newsletter and get a special 30% discount.</p>
             <form action="" name="subscribe-form" id="subscribe-form" class="d-flex justify-content-between">
                 
-                <div class="container form-container">
+                <div class="container form-container" id="change-back-input">
                     <div class="row">
                         <div class="col-lg-10 form-input d-flex">
-                            <input type="email" placeholder="Enter e-mail" class="align-self-center">
+                            <input type="email" placeholder="Enter e-mail" class="align-self-center" id="change-white">
                         </div>
                         <div class="col-lg-2 form-button d-flex justify-content-center align-self-center">
                             <button>Subscribe</button>
@@ -365,12 +367,12 @@
             <div class="col-md-3 col-sm-6 footer-col footer-travel d-flex justify-content-sm-start justify-content-center">
                 <div class="info-content">
                     <h3 class="m-0 text-sm-start text-center">Travel</h3>
-                    <p class="m-0 text-sm-start text-center">Travel you choose the destination, we offer you the experience.</p>
+                    <p class="m-0 text-sm-start text-center change-gray">Travel you choose the destination, we offer you the experience.</p>
                     <div class="footer-socials-box d-flex justify-content-sm-start justify-content-center gap-sm-3 gap-5">
-                        <a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-box-fill"></i></a>
-                        <a href="https://www.twitter.com" target="_blank"><i class="ri-twitter-fill"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"><i class="ri-instagram-fill"></i></a>
-                        <a href="https://www.youtube.com" target="_blank"><i class="ri-youtube-fill"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" class="change-gray"><i class="ri-facebook-box-fill"></i></a>
+                        <a href="https://www.twitter.com" target="_blank" class="change-gray"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" class="change-gray"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://www.youtube.com" target="_blank" class="change-gray"><i class="ri-youtube-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -378,9 +380,9 @@
                 <div class="info-content">
                     <h3 class="m-0 text-sm-start text-center">About</h3>
                     <div class="footer-about-links d-flex flex-column gap-2">
-                        <a href="#" class="text-capitalize">About Us</a>
-                        <a href="#">Features</a>
-                        <a href="#">News and Blog</a>
+                        <a href="#" class="text-capitalize change-gray">About Us</a>
+                        <a href="#" class="change-gray">Features</a>
+                        <a href="#" class="change-gray">News and Blog</a>
                     </div>
                 </div>
             </div>
@@ -388,9 +390,9 @@
                 <div class="info-content">
                     <h3 class="m-0 text-sm-start text-center">Company</h3>
                     <div class="footer-company-links d-flex flex-column gap-2">
-                        <a href="#">Team</a>
-                        <a href="#">Plan y Pricing</a>
-                        <a href="#">Become a member</a>
+                        <a href="#" class="change-gray">Team</a>
+                        <a href="#" class="change-gray">Plan y Pricing</a>
+                        <a href="#" class="change-gray">Become a member</a>
                     </div>
                 </div>
             </div>
@@ -398,9 +400,9 @@
                 <div class="info-content">
                     <h3 class="m-0 text-sm-start text-center">Support</h3>
                     <div class="footer-about-links d-flex flex-column gap-2">
-                        <a href="#">FAQs</a>
-                        <a href="#" class="text-capitalize">Support Center</a>
-                        <a href="#" class="text-capitalize">Contact Us</a>
+                        <a href="#" class="change-gray">FAQs</a>
+                        <a href="#" class="text-capitalize change-gray">Support Center</a>
+                        <a href="#" class="text-capitalize change-gray">Contact Us</a>
                     </div>
                 </div>
             </div>

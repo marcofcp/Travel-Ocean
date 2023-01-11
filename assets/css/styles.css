@@ -21,7 +21,7 @@
 body {
     border: none;
     font-family: "Open Sans", sans-serif;
-    background-color: white;
+    background-color: #ffffff;
 }
 /* =========== MAIN SECTION + HEADER + NAV ============= */
 .header-main-container {
@@ -69,9 +69,14 @@ nav {
 }
 .moon-box {
     margin-left: -3em;
+    cursor: pointer;
 }
 .ri-moon-line {
     color: white;
+}
+.ri-sun-line {
+    color: white;
+    display: none;
 }
 .hidden-menu-hamburger {
     display: none;
@@ -87,6 +92,10 @@ main {
 
 /* ============ ACTIVE STATES TOGGLE =============== */
 
+
+.body-dark {
+    background-color: var(--hue-color);
+}
 .active-hidden-menu {
     right: 0 !important;
 }
@@ -111,6 +120,9 @@ main {
 }
 .scrolled-go-to-top {
     bottom: 15% !important;
+}
+#ri-sun-line-hidden-menu {
+    display: none;
 }
 
 /* =========== HIDDEN MENU =========== */
@@ -266,8 +278,8 @@ main {
 
 .about {
     padding-top: 8em;
-    padding-bottom: 8em;
     overflow: hidden;
+    background-color: transparent;
 }
         /* Left Side */
 
@@ -319,6 +331,7 @@ main {
 
 .discover {
     margin-bottom: 8em;
+    padding-top: 8em;
 }
 .discover h2 {
     color: var(--sub-title-color);
@@ -545,6 +558,7 @@ main {
     outline: none;
     padding: 1em;
     color: var(--sub-title-color);
+    background-color: transparent;
 }
 .form-container button {
     border: none;
@@ -688,13 +702,13 @@ main {
     }
     .about {
         padding-top: 4em;
-        padding-bottom: 4em;
     }
     .swiper-box {
         max-width: 95%;
         margin-bottom: 4em;
     }
     .discover {
+        padding-top: 4em;
         margin-bottom: 4em;
     }
     .video-file {
