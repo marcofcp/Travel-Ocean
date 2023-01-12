@@ -130,6 +130,7 @@ const changeFormInputBox = document.getElementById("change-back-input");
 const changeWhite = document.getElementById("change-white");
 const riMoonLineHiddenMenu = document.getElementById("ri-moon-line-hidden-menu");
 const riSunLineHiddenMenu = document.getElementById("ri-sun-line-hidden-menu");
+const darkModeText = document.getElementById("dark-mode-text");
 
 riMoonLine.addEventListener("click", (evt)=> {
     riMoonLine.style.display = "none";
@@ -151,6 +152,7 @@ riMoonLine.addEventListener("click", (evt)=> {
     riMoonLineHiddenMenu.style.display = "none";
     riSunLineHiddenMenu.style.display = "block";
     hiddenMenu.style.backgroundColor = "#2A2C36";
+    darkModeText.innerHTML = "Light Mode";
 });
 
 riSunLine.addEventListener("click", (evt)=> {
@@ -170,7 +172,52 @@ riSunLine.addEventListener("click", (evt)=> {
     riSunLineHiddenMenu.style.display = "none";
     riMoonLineHiddenMenu.style.display = "block";
     hiddenMenu.style.backgroundColor = "white";
+    
 });
 
 /* ============= DARK MODE (HIDDEN MENU) =============== */
 
+riMoonLineHiddenMenu.addEventListener("click", (evt)=> {
+    riMoonLine.style.display = "none";
+    riSunLine.style.display = "block";
+    body.style.backgroundColor = "#162528";
+    about.style.backgroundColor = "#162528";
+    discover.style.backgroundColor = "#162528";
+    changeFormInputBox.style.backgroundColor = "#162528";
+    changeWhite.style.color = "white";
+    titulosH2.forEach((c)=> {
+        c.style.color = "white";
+    });
+    titulosH3.forEach((c)=> {
+        c.style.color = "white";
+    });
+    changeGray.forEach((c)=> {
+        c.style.color = "gray";
+    });
+    riMoonLineHiddenMenu.style.display = "none";
+    riSunLineHiddenMenu.style.display = "block";
+    hiddenMenu.style.backgroundColor = "#2A2C36";
+    closeHiddenMenu.style.color = "gray";
+    darkModeText.innerHTML = "Light Mode";
+});
+
+riSunLineHiddenMenu.addEventListener("click", (evt)=> {
+    riSunLine.style.display = "none";
+    riMoonLine.style.display = "block";
+    body.style.backgroundColor = "transparent";
+    about.style.backgroundColor = "transparent";
+    discover.style.backgroundColor = "transparent";
+    changeFormInputBox.style.backgroundColor = "white";
+    changeWhite.style.color = "#104146";
+    titulosH2.forEach((c)=> {
+        c.style.color = "#104146";
+    });
+    titulosH3.forEach((c)=> {
+        c.style.color = "#104146";
+    });
+    riSunLineHiddenMenu.style.display = "none";
+    riMoonLineHiddenMenu.style.display = "block";
+    hiddenMenu.style.backgroundColor = "white";
+    closeHiddenMenu.style.color = "#0F373F";
+    darkModeText.innerHTML = "Dark Mode";
+});
