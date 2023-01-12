@@ -5,7 +5,8 @@ const navLinks = [...document.querySelectorAll(".nav_a")];
 const darkOn = document.getElementById("ri-moon-line");
 const hiddenMenuHamburger = document.getElementById("hidden-menu-hamburger");
 const closeHiddenMenu = document.getElementById("ri-close-line");
-const riMenuLine = document.getElementById("ri-menu-line")
+const riMenuLine = document.getElementById("ri-menu-line");
+const riSunLine = document.getElementById("ri-sun-line");
 const hiddenMenu = document.getElementById("hidden-menu");
 const closeMenuImg = document.getElementById("close-menu-img");
 
@@ -48,6 +49,7 @@ window.addEventListener("scroll", (evt)=> {
         logo.classList.add("scrolled-logo");
         darkOn.classList.add("scrolled-ri-moon-line");
         riMenuLine.style.color = "#0F373F";
+        riSunLine.style.color = "#0F373F";
         navLinks.map((c)=> {
             c.classList.add("scrolled-nav_a");
         });
@@ -56,6 +58,7 @@ window.addEventListener("scroll", (evt)=> {
         logo.classList.remove("scrolled-logo");
         darkOn.classList.remove("scrolled-ri-moon-line");
         riMenuLine.style.color = "white";
+        riSunLine.style.color = "white";
         navLinks.map((c)=> {
             c.classList.remove("scrolled-nav_a");
         });
@@ -113,3 +116,61 @@ videoButton.addEventListener("click", (evt)=> {
         videoIcon.classList.add("ri-play-line");
     }
 });
+
+/* ============= DARK MODE =============== */
+
+const riMoonLine = document.getElementById("ri-moon-line");
+const body = document.getElementById("body");
+const about = document.getElementById("about");
+const discover = document.getElementById("discover");
+const titulosH2 = [...document.getElementsByTagName("h2")];
+const titulosH3 = [...document.getElementsByTagName("h3")];
+const changeGray = [...document.querySelectorAll(".change-gray")];
+const changeFormInputBox = document.getElementById("change-back-input");
+const changeWhite = document.getElementById("change-white");
+const riMoonLineHiddenMenu = document.getElementById("ri-moon-line-hidden-menu");
+const riSunLineHiddenMenu = document.getElementById("ri-sun-line-hidden-menu");
+
+riMoonLine.addEventListener("click", (evt)=> {
+    riMoonLine.style.display = "none";
+    riSunLine.style.display = "block";
+    body.style.backgroundColor = "#162528";
+    about.style.backgroundColor = "#162528";
+    discover.style.backgroundColor = "#162528";
+    changeFormInputBox.style.backgroundColor = "#162528";
+    changeWhite.style.color = "white";
+    titulosH2.forEach((c)=> {
+        c.style.color = "white";
+    });
+    titulosH3.forEach((c)=> {
+        c.style.color = "white";
+    });
+    changeGray.forEach((c)=> {
+        c.style.color = "gray";
+    });
+    riMoonLineHiddenMenu.style.display = "none";
+    riSunLineHiddenMenu.style.display = "block";
+    hiddenMenu.style.backgroundColor = "#2A2C36";
+});
+
+riSunLine.addEventListener("click", (evt)=> {
+    riSunLine.style.display = "none";
+    riMoonLine.style.display = "block";
+    body.style.backgroundColor = "transparent";
+    about.style.backgroundColor = "transparent";
+    discover.style.backgroundColor = "transparent";
+    changeFormInputBox.style.backgroundColor = "white";
+    changeWhite.style.color = "#104146";
+    titulosH2.forEach((c)=> {
+        c.style.color = "#104146";
+    });
+    titulosH3.forEach((c)=> {
+        c.style.color = "#104146";
+    });
+    riSunLineHiddenMenu.style.display = "none";
+    riMoonLineHiddenMenu.style.display = "block";
+    hiddenMenu.style.backgroundColor = "white";
+});
+
+/* ============= DARK MODE (HIDDEN MENU) =============== */
+
