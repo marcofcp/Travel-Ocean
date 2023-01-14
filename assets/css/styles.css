@@ -542,8 +542,9 @@ main {
 .subscribe-content {
     gap: 2em;
 }
-.subscribe-content h2 {
+.subscribe-title {
     color: white;
+    font-size: 2em;
 }
 .subscribe-content p {
     color: white;

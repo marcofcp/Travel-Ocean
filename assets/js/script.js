@@ -140,6 +140,7 @@ riMoonLine.addEventListener("click", (evt)=> {
     discover.style.backgroundColor = "#162528";
     changeFormInputBox.style.backgroundColor = "#162528";
     changeWhite.style.color = "white";
+
     titulosH2.forEach((c)=> {
         c.style.color = "white";
     });
@@ -163,6 +164,7 @@ riSunLine.addEventListener("click", (evt)=> {
     discover.style.backgroundColor = "transparent";
     changeFormInputBox.style.backgroundColor = "white";
     changeWhite.style.color = "#104146";
+
     titulosH2.forEach((c)=> {
         c.style.color = "#104146";
     });
@@ -185,6 +187,7 @@ riMoonLineHiddenMenu.addEventListener("click", (evt)=> {
     discover.style.backgroundColor = "#162528";
     changeFormInputBox.style.backgroundColor = "#162528";
     changeWhite.style.color = "white";
+
     titulosH2.forEach((c)=> {
         c.style.color = "white";
     });
@@ -209,6 +212,7 @@ riSunLineHiddenMenu.addEventListener("click", (evt)=> {
     discover.style.backgroundColor = "transparent";
     changeFormInputBox.style.backgroundColor = "white";
     changeWhite.style.color = "#104146";
+    
     titulosH2.forEach((c)=> {
         c.style.color = "#104146";
     });
